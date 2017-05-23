@@ -35,6 +35,25 @@ require('./app');
 
 Inside `app.js`, you can use `await` whenever you like.
 
+You can also tell Node to require the module for you, instead of using
+a separate bootstrap script:
+```
+$ node -r top-level-await app
+```
+
+Which works for CLI tools too:
+```
+#!/usr/bin/env node -r top-level-await
+
+console.log( await Promise.resolve('hello world') );
+```
+
 ## How?
 
 By hacking `Module.wrap()`.
+
+## Is it production-ready?
+
+```
+¯\_(ツ)_/¯
+```
