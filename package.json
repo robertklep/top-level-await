@@ -5,5 +5,14 @@
   "main": "index.js",
   "repository": "robertklep/top-level-await",
   "author": "Robert Klep <robert@klep.name>",
-  "license": "MIT"
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "scripts": {
+    "postinstall": "node check-version.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "semver": "^5.3.0"
+  }
 }

@@ -1,6 +1,6 @@
 # top-level-await
 
-Allow using `await` at your code's top level.
+Allow using `await` at your code's top level. Requires Node.js v7.6.0 or higher.
 
 Not this:
 ```
@@ -51,6 +51,8 @@ console.log( await Promise.resolve('hello world') );
 ## How?
 
 By hacking `Module.wrap()`.
+
+This is done without prejudice, so all modules that get loaded after loading this module will be "fixed".
 
 ## Is it production-ready?
 
