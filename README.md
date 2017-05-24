@@ -1,4 +1,4 @@
-# top-level-await
+# top-level-await (PoC)
 
 Allow using `await` at your code's top level. Requires Node.js v7.6.0 or higher.
 
