@@ -1,6 +1,6 @@
 {
   "name": "top-level-await",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Use `await` at your code's top-level (without IIFE)",
   "main": "index.js",
   "repository": "robertklep/top-level-await",
